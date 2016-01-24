@@ -44,6 +44,7 @@ print(selector.xpath('//a/@href'))
 print(selector.xpath('//a[starts-with(@href,"evil")]/text()'))
 
 # string(.) 获取标签套标签的文本
+
 data = selector.xpath('//div[@id="test"]')[0]
 content = data.xpath('string(.)')
 print(type(data))
